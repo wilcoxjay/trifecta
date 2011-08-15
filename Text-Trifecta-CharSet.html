@@ -15,10 +15,9 @@ window.onload = function () {pageLoad();setSynopsis("mini_Text-Trifecta-CharSet.
 </a></li><li><a href="#g:12">IntMaps
 </a></li><li><a href="#g:13">Array
 </a></li></ul></li></ul></div><div id="description"><p class="caption">Description</p><div class="doc"><p>Fast set membership tests for <code><a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Data-Char.html#t:Char">Char</a></code> values
-</p><p>Stored as a (possibly negated IntMap) and a fast set for the ASCII range.
-</p><p>The ASCII range is unboxed for efficiency. For small (complemented) sets, we
- test for membership using a binary search. For larger (complemented) sets
- we use a lookup table. 
+</p><p>Stored as a (possibly negated) IntMap and a fast set used for the head byte.
+</p><p>The set of valid (possibly negated) head bytes is stored unboxed as a 32-byte
+ bytestring-based lookup table.
 </p><p>Designed to be imported qualified:
 </p><pre> import Text.Trifecta.CharSet (CharSet)
  import qualified Text.Trifecta.CharSet as CharSet

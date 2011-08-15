@@ -32,7 +32,7 @@ window.onload = function () {pageLoad();setSynopsis("mini_Text-Trifecta-Parser-T
  of the number. The number is parsed according to the grammar rules
  defined in the Haskell report. 
 </p><p>This parser does NOT swallow trailing whitespace. 
-</p></div></div><div class="top"><p class="src"><a name="v:naturalOrDouble-39-" class="def">naturalOrDouble'</a> :: <a href="Text-Trifecta-Parser-Class.html#t:MonadParser">MonadParser</a> m =&gt; m (<a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Data-Either.html#t:Either">Either</a> <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Integer">Integer</a> <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Double">Double</a>)</p><div class="doc"><p>This parser parses either <code>natural</code> or a <code>float</code>.
+</p></div></div><div class="top"><p class="src"><a name="v:naturalOrDouble-39-" class="def">naturalOrDouble'</a> :: <a href="Text-Trifecta-Parser-Class.html#t:MonadParser">MonadParser</a> m =&gt; m (<a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Data-Either.html#t:Either">Either</a> <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Integer">Integer</a> <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Double">Double</a>)</p><div class="doc"><p>This parser parses either <code>natural</code> or a <code>double</code>.
  Returns the value of the number. This parsers deals with
  any overlap in the grammar rules for naturals and floats. The number
  is parsed according to the grammar rules defined in the Haskell report. 
@@ -40,9 +40,9 @@ window.onload = function () {pageLoad();setSynopsis("mini_Text-Trifecta-Parser-T
 </p></div></div><div class="top"><p class="src"><a name="v:decimal" class="def">decimal</a> :: <a href="Text-Trifecta-Parser-Class.html#t:MonadParser">MonadParser</a> m =&gt; m <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Integer">Integer</a></p><div class="doc"><p>Parses a positive whole number in the decimal system. Returns the
  value of the number. 
 </p></div></div><div class="top"><p class="src"><a name="v:hexadecimal" class="def">hexadecimal</a> :: <a href="Text-Trifecta-Parser-Class.html#t:MonadParser">MonadParser</a> m =&gt; m <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Integer">Integer</a></p><div class="doc"><p>Parses a positive whole number in the hexadecimal system. The number
- should be prefixed with &quot;0x&quot; or &quot;0X&quot;. Returns the value of the
+ should be prefixed with &quot;x&quot; or &quot;X&quot;. Returns the value of the
  number. 
 </p></div></div><div class="top"><p class="src"><a name="v:octal" class="def">octal</a> :: <a href="Text-Trifecta-Parser-Class.html#t:MonadParser">MonadParser</a> m =&gt; m <a href="/Library/Frameworks/GHC.framework/Versions/7.0.3-x86_64/usr/share/doc/ghc/html/libraries/base-4.3.1.0/Prelude.html#t:Integer">Integer</a></p><div class="doc"><p>Parses a positive whole number in the octal system. The number
- should be prefixed with &quot;0o&quot; or &quot;0O&quot;. Returns the value of the
+ should be prefixed with &quot;o&quot; or &quot;O&quot;. Returns the value of the
  number. 
 </p></div></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.9.2</p></div></body></html>
